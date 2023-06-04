@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+#body-content {
+    padding-bottom: 2.5rem;
+    /* altura do rodapé */
+    background: radial-gradient(circle at 0% 100%,
+            #e4e4e473 4%,
+            #fefffee5 30%,
+            #e0f0dfe5 62%,
+            #c6cbc6e5 85%,
+            #767676);
+}
+
+
+/*Estilo da barra de navegação*/
+.navbar {
+    height: 100px;
+    background: radial-gradient(circle at 0% 100%,
+            #e4e4e473 4%,
+            #fefffee5 30%,
+            #e0f0dfe5 62%,
+            #c6cbc6e5 85%,
+            #767676);
+    color: black;
+    border-bottom: 1px solid #e4e4e473;
+}
+
+
+a.nav-link {
+    color: white;
+}
+
+
+.navbar-brand:hover {
+    background-color: transparent;
+}
+
+
+a.nav-link:hover {
+    color: black;
+    background: lightgray;
+    border-radius: 50px;
+}
+
+/* corpo do banner e descrição */
+
+main {
+    
+    color: black;
+}
+
+#containerBanner {
+    display: flex;
+    padding: 40px 20px;
+}
+
+#carouselExampleCaptions img {
+    padding: 5px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgb(32, 29, 29);
+}
+
+div.description {
+    width: 35%;
+    height: 100%;
+    font-size: 18px;
+    text-align: justify;
+    color: black;
+}
+
+div.description h1 {
+    margin-bottom: 30px;
+}
+
+/*estilo de curriculos*/
+
+#cv-container{
+    padding: 10px;
+    height: 500px;
+}
+
+h1{
+    padding-bottom: 100px;
+}
+
+.cv{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cv a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.cv a:hover{
+    color: black;
+    background: lightgray;
+    border-radius: 50px;
+}
+
+#curriculo{
+    padding: 50px;
+}
+
+.img-cv{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.img-cv img{
+    border-radius: 50%;
+}
+.titulo-cv{
+    display: flex;
+}
+
+.content{
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*Estilo do rodapé*/
+.footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(circle at 0% 100%,
+            #e4e4e473 4%,
+            #fefffee5 30%,
+            #e0f0dfe5 62%,
+            #c6cbc6e5 85%,
+            #767676);
+    color: black;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    margin-left: 25px;
+}
+
+.contatos {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.containerFooter ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerList li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.copyRight {
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* botão voltar ao topo */
+
+#voltar-topo {
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+    border: 1px solid rgb(3, 124, 3);
+    color: rgb(3, 124, 3);
+}
+
+#voltar-topo:hover {
+    background-color: lightgray;
+}
+
+/* login */
+
+#section-login {
+    margin-top: 100px;
+    color: white;
+}
+
+#section-login h1 {
+    text-align: center;
+    color: white;
+}
+
+#section-login input {
+    width: 100%;
+}
+
+#bt-login.btn.btn-primary {
+    background-color: black;
+    border: 1px solid rgb(3, 124, 3);
+}
+
+#bt-login.btn.btn-primary:hover {
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+}
+
+/*cadastro*/
+
+#section-cadastro {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#form-cadastrar {
+    padding: 50px;
+    display: none;
+}
+
+.btn.btn-info {
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+    color: white;
+}
+
+.btn.btn-info:hover {
+    background-color: rgb(0, 161, 0);
+    border: 1px solid lightgray;
+    color: white;
+}
+
+#bt-cadastrar {
+    background-color: black;
+    border: 1px solid rgb(3, 124, 3);
+}
+
+#bt-cadastrar:hover {
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+}
+
+#login input {
+    border: 1px solid rgb(0, 161, 0);
+}
