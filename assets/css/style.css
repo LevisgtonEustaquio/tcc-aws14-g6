@@ -7,17 +7,17 @@
 #wrapper {
     position: relative;
     min-height: 100vh;
+    background: radial-gradient(circle at 0% 100%,
+    #e4e4e473 4%,
+    #fefffee5 30%,
+    #e0f0dfe5 62%,
+    #c6cbc6e5 85%,
+    #767676);
 }
 
 #body-content {
-    padding-bottom: 2.5rem;
-    /* altura do rodapé */
-    background: radial-gradient(circle at 0% 100%,
-            #e4e4e473 4%,
-            #fefffee5 30%,
-            #e0f0dfe5 62%,
-            #c6cbc6e5 85%,
-            #767676);
+   
+            height: 100%;
 }
 
 
@@ -74,16 +74,23 @@ main {
     box-shadow: 2px 6px 8px 0 rgb(32, 29, 29);
 }
 
-div.description {
-    width: 35%;
+.description {
+    width: 100%;
     height: 100%;
     font-size: 18px;
     text-align: justify;
     color: black;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-div.description h1 {
+.description h1{
+    padding: 20px;
     margin-bottom: 30px;
+}
+
+.description p{
+    padding: 10px;
 }
 
 /*estilo de curriculos*/
@@ -93,8 +100,9 @@ div.description h1 {
     height: 500px;
 }
 
-h1{
-    padding-bottom: 100px;
+.cv h1{
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .cv{
@@ -122,6 +130,11 @@ h1{
     padding: 50px;
 }
 
+#curriculo a{
+    text-decoration: none;
+    color: black;
+}
+
 .img-cv{
 
     display: flex;
@@ -136,14 +149,22 @@ h1{
     display: flex;
 }
 
+.icons-contact{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .content{
     padding-bottom: 20px;
 }
 
-.button-options{
+.download{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    width: 50px;
+    height: 200px;
+    background-color: #0430c0;
 }
 
 
@@ -169,41 +190,22 @@ h1{
     padding: 10px;
     justify-content: space-around;
     align-items: flex-start;
+    flex-direction: column;
 }
 
-.footer-brand {
+.logo{
     display: flex;
-    justify-content: flex-start;
-    width: 25%;
-    margin-left: 25px;
+    justify-content: left;
+    align-items: flex-start;
 }
 
-.contatos {
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.contatos a {
-    text-decoration: none;
-    color: white;
-}
-
-
-
-.containerFooter ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footerList li a {
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-}
 
 .copyRight {
+    display: flex;
     justify-content: center;
     font-size: 10px;
+    align-items: center;
+    width: 100%;
 }
 
 /* botão voltar ao topo */
@@ -212,76 +214,11 @@ h1{
     position: fixed;
     bottom: 5px;
     right: 50px;
-    border: 1px solid rgb(3, 124, 3);
-    color: rgb(3, 124, 3);
+    border: 1px solid rgb(6, 64, 190);
+    color: rgb(6, 64, 190);
 }
 
 #voltar-topo:hover {
     background-color: lightgray;
 }
 
-/* login */
-
-#section-login {
-    margin-top: 100px;
-    color: white;
-}
-
-#section-login h1 {
-    text-align: center;
-    color: white;
-}
-
-#section-login input {
-    width: 100%;
-}
-
-#bt-login.btn.btn-primary {
-    background-color: black;
-    border: 1px solid rgb(3, 124, 3);
-}
-
-#bt-login.btn.btn-primary:hover {
-    background-color: rgb(3, 124, 3);
-    border: 1px solid lightgray;
-}
-
-/*cadastro*/
-
-#section-cadastro {
-    color: white;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#form-cadastrar {
-    padding: 50px;
-    display: none;
-}
-
-.btn.btn-info {
-    background-color: rgb(3, 124, 3);
-    border: 1px solid lightgray;
-    color: white;
-}
-
-.btn.btn-info:hover {
-    background-color: rgb(0, 161, 0);
-    border: 1px solid lightgray;
-    color: white;
-}
-
-#bt-cadastrar {
-    background-color: black;
-    border: 1px solid rgb(3, 124, 3);
-}
-
-#bt-cadastrar:hover {
-    background-color: rgb(3, 124, 3);
-    border: 1px solid lightgray;
-}
-
-#login input {
-    border: 1px solid rgb(0, 161, 0);
-}
